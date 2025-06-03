@@ -1,1 +1,10 @@
 
+<ul>
+  <li *ngFor="let todo of todos; let i = index">
+    <input type="checkbox" [checked]="todo.completed" (change)="toggleTodo(i)">
+    <span [style.color]="todo.completed ? 'green' : ''">
+      {{ todo.text }}
+    </span>
+    <button (click)="deleteTodo(i)">Delete</button>
+  </li>
+</ul>
