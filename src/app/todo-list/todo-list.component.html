@@ -1,8 +1,8 @@
-<div class="wh-div" >
-  <div class="list" >
-    <ul  *ngFor="let todo of todos; let i = index">
+<div class="wh-div">
+  <div class="list">
+    <ul *ngFor="let todo of todos; let i = index">
       <li>
-        <input type="checkbox" [(ngModel)]="todo.completed" (change)="completed()">
+        <input type="checkbox" [(ngModel)]="todo.completed" (click)="onCheckboxChange(i)">
         <span [ngClass]="{ 'completed-todo': todo.completed }">
           {{ todo.text }}
         </span>
@@ -10,9 +10,13 @@
       </li>
     </ul>
   </div>
- 
 
-
-
-
+  <div class="completed">
+    <h3>Completed Todos</h3>
+    <ul>
+      <li *ngFor="let todo of todos | custom">
+        <span>{{ todo.text }}</span>
+      </li>
+    </ul>
+  </div>
 </div>

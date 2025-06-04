@@ -1,12 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'custom'
+  name: 'custom',
+
 })
 export class CustomPipe implements PipeTransform {
-
-  transform(): unknown {
-    return null;
+  transform(todos: { text: string; completed: boolean }[]): any[] {
+    return todos.filter(todo => todo.completed);
   }
-
 }

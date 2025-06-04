@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TodoComponent } from './todo/todo.component';
 import { CustomPipe } from './custom.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
