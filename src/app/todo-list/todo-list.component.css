@@ -1,7 +1,5 @@
 ul {
   list-style: none;
-  
-  margin-left: 100px;
   width: 50%;
 }
 
@@ -37,4 +35,17 @@ button:hover {
 li{
   display: flex;
   margin: 10px;
+}
+.wh-div{
+width: 100%;
+display: flex;
+}
+.list{
+width: 50%;
+}
+.completed{
+width: 50%;
+}
+.btn{
+  margin-left: 10px;
 }

@@ -1,17 +1,18 @@
-<ul>
-  <li *ngFor="let todo of todos; let i = index">
-    <input
-      type="checkbox"
-      [(ngModel)]="todo.completed"
-     (click)="completed()"
-    >
-    <span [ngClass]="{ 'completed-todo': todo.completed }">
-      {{ todo.text }}
-    </span>
+<div class="wh-div" >
+  <div class="list" >
+    <ul  *ngFor="let todo of todos; let i = index">
+      <li>
+        <input type="checkbox" [(ngModel)]="todo.completed" (change)="completed()">
+        <span [ngClass]="{ 'completed-todo': todo.completed }">
+          {{ todo.text }}
+        </span>
+        <button (click)="deleteTodo(i)">Delete</button>
+      </li>
+    </ul>
+  </div>
+ 
 
-    <button (click)="deleteTodo(i)">Delete</button>
-  </li>
-  <li>
 
-  </li>
-</ul>
+
+
+</div>

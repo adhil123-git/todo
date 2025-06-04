@@ -7,11 +7,15 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TodoComponent } from './todo/todo.component';
+import { CustomPipe } from './custom.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     TodoFormComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,

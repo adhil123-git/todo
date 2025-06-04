@@ -20,7 +20,7 @@ export class TodoFormComponent {
         verticalPosition: 'top',
       });
       this.todo = '';
-      this.router.navigate(['/list'])
+      
     }
   }
 
