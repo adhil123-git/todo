@@ -12,13 +12,15 @@ export class TodoListComponent implements OnInit {
     return this.service.getTodos();
   }
 
-  toggleTodo(i: number) {
-    this.service.toggle(i);
-    console.log(this.todos);
-  }
+
+  logTodos() {
+  console.log(this.todos);
+}
 
   deleteTodo(i: number) {
-    this.service.delete(i);
+   
+    this.todos.splice(i, 1);
+    alert('Todo deleted successfully');
   }
   ngOnInit(): void {
     console.log(this.todos)

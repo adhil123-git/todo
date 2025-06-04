@@ -14,14 +14,6 @@ export class TodoService {
     }
   }
 
-  delete(i: number) {
-    this.tododata.splice(i, 1);
-  }
-
-  toggle(i: number) {
-    this.tododata[i].completed = !this.tododata[i].completed;
-  }
-
   getTodos() {
     return this.tododata;
     

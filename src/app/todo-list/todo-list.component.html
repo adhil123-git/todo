@@ -1,6 +1,11 @@
 <ul>
   <li *ngFor="let todo of todos; let i = index">
-    <input type="checkbox" [checked]="todo.completed" (change)="toggleTodo(i)">
+    <input
+      type="checkbox"
+      [(ngModel)]="todo.completed"
+     (ngModelChange)="logTodos()"
+
+    >
     <span [ngClass]="{ 'completed-todo': todo.completed }">
       {{ todo.text }}
     </span>
