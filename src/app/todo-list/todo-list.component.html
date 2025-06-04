@@ -3,12 +3,15 @@
     <input
       type="checkbox"
       [(ngModel)]="todo.completed"
-     (ngModelChange)="logTodos()"
-
+     (click)="completed()"
     >
     <span [ngClass]="{ 'completed-todo': todo.completed }">
       {{ todo.text }}
     </span>
+
     <button (click)="deleteTodo(i)">Delete</button>
+  </li>
+  <li>
+
   </li>
 </ul>

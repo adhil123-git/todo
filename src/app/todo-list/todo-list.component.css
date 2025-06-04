@@ -7,9 +7,8 @@ ul {
 
 .completed-todo {
   
-  background-color:green;
-  
-  
+  text-decoration:line-through;
+
 }
 input[type="checkbox"] {
   margin-right: 12px;
@@ -34,4 +33,8 @@ button {
 
 button:hover {
   background: #c0392b;
+}
+li{
+  display: flex;
+  margin: 10px;
 }

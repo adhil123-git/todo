@@ -2,7 +2,7 @@
     <h2>ADD</h2>
     <form #addTodo="ngForm" (ngSubmit)="onSubmit(addTodo)" class="">
         <div>
-            <input type="text" name="todo" class="form-control" placeholder="Add Todo " [(ngModel)]="todo" required>
+            <input type="text" name="todo" placeholder="Add Todo " [(ngModel)]="todo" required>
         </div>
         <button  type="submit" [disabled]="addTodo.invalid"> ADD </button>
     </form>
