@@ -14,28 +14,27 @@ h2 {
 }
 
 form {
-  display: flex;
-  gap: 10px;
+  display: block;
+
 }
 
 input[type="text"] {
-  flex: 1;
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button[type="submit"] {
+button{
   background: #2ecc71;
   color: #fff;
   border: none;
   padding: 8px 18px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.2s;
+  
 }
 
-button[type="submit"]:hover {
+button:hover {
   background: #27ae60;
 }

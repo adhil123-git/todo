@@ -13,10 +13,10 @@ export class TodoFormComponent {
   constructor(private service: TodoService) {}
 
   onSubmit(addTodo: NgForm) {
-    if (this.todo.trim()) {
+    if (this.todo) {
       this.service.add(this.todo);
       this.todo = '';
-      addTodo.resetForm();
+      
     }
   }
 }

@@ -1,16 +1,16 @@
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  
+  margin-left: 100px;
+  width: 50%;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
+.completed-todo {
+  
+  background-color:green;
+  
+  
 }
-
 input[type="checkbox"] {
   margin-right: 12px;
   width: 18px;
@@ -18,7 +18,6 @@ input[type="checkbox"] {
 }
 
 span {
-  flex: 1;
   font-size: 18px;
 }
 
@@ -30,7 +29,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   margin-left: 10px;
-  transition: background 0.2s;
+ 
 }
 
 button:hover {
