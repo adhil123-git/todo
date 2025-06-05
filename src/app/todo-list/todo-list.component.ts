@@ -22,7 +22,5 @@ export class TodoListComponent {
     });
   }
 
-  onCheckboxChange(i: number) {
-    this.service.toggleCompleted(i);
-  }
+  
 }

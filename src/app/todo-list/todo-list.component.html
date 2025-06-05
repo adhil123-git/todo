@@ -2,7 +2,7 @@
   <div class="list">
     <ul *ngFor="let todo of todos; let i = index">
       <li>
-        <input type="checkbox" [(ngModel)]="todo.completed" (click)="onCheckboxChange(i)">
+        <input type="checkbox" [(ngModel)]="todo.completed">
         <span [ngClass]="{ 'completed-todo': todo.completed }">
           {{ todo.text }}
         </span>

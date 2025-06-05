@@ -21,9 +21,4 @@ export class TodoService {
   delete(index: number) {
     this.tododata.splice(index, 1);
   }
-
-  toggleCompleted(index: number) {
-    this.tododata[index].completed = !this.tododata[index].completed;
-    this.tododata = [...this.tododata]; // Change the array reference
-  }
 }
